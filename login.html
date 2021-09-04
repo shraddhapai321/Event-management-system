@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+
+
+
+    <!-- Login & Sign up -->
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="signup.php" method="POST" enctype="multipart/form-data">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Name" name="username" id="username" required/>
+                <input type="email" placeholder="Email" name="email" id="email" required/>
+                <input type="password" placeholder="Password" name="password" id="password" required/>
+                <div class="radio">
+                    <label for="admin">Admin</label>
+                    <input type="radio" name="role" id="admin" value="1">
+                    <label for="user">User</label>
+                    <input type="radio" name="role" id="user" value="2">
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="authenticate.php" method="POST" enctype="multipart/form-data">
+                <h1>Sign in</h1>
+                <input type="email" placeholder="Email" name="email" id="username" />
+                <input type="password" placeholder="Password" name="password" id="password" />
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome</h1>
+                    <p>Already have an account, then let's log in</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello!</h1>
+                    <p>Enter your sign up details</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <script src="js/script.js"></script>
+</body>
+</html>

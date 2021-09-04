@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container event-container">
+        <h1>Host Event</h1>
+        <form action="register.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="eventname" id="#" placeholder="Event Name">
+            <div class="category">
+                <label for="category">Category : </label>
+                <select name="category" id="#" required>
+                    <option value="0">Select category</option>
+                    <option value="1">Technical</option>
+                    <option value="2">Non-Technical</option>
+                </select>
+            </div>
+            <input type="text" name="eventdesc" id="#" placeholder="Enter Description">
+            <div class="date-part">
+                <div class="date-1">
+                    <label for="eventreg">Last date for registration :</label>
+                    <input type="datetime-local" name="eventreg" id="reg">
+                </div>
+                <div class="date-2">
+                    <label for="eventtime">Event date :</label>
+                    <input type="datetime-local" name="eventtime" id="eve">
+                </div>
+            </div>
+            <button class="host-btn">Host Event</button>
+        </form>
+    </div>
+</body>
+</html>
